@@ -71,7 +71,7 @@ final class StandardHostValve
     /*
     * Cache classLoader to reduce expensive calls to class.getClassLoader()
     * */
-    public static final ClassLoader CONTEXT_CLASS_LOADER = StandardHostValve.class.getClassLoader();
+    private static final ClassLoader CONTEXT_CLASS_LOADER = StandardHostValve.class.getClassLoader();
 
 
     // ------------------------------------------------------------- Properties
